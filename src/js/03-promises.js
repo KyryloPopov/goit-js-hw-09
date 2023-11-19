@@ -15,7 +15,6 @@ function generatePromises(event) {
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
-  console.log(position, delay);
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (shouldResolve) {

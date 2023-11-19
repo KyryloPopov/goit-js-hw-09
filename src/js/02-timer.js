@@ -60,7 +60,7 @@ function renderValues(convertedParameters) {
 
 //перевірка, чи не закінчився таймер (намагався через перевірку TimeLeft, проте там не виходило отримати точне число 0 при різниці)
 function timeLeftCheck(args) {
-  for (arg in args) {
+  for (const arg in args) {
     if (args[arg]) {
       return true;
     }
