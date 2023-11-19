@@ -1,8 +1,7 @@
-// Описаний в документації
 import flatpickr from 'flatpickr';
-// Додатковий імпорт стилів
+
 import 'flatpickr/dist/flatpickr.min.css';
-// Імпорт Notiflix
+
 import Notiflix from 'notiflix';
 
 // змінна для кнопки
@@ -59,9 +58,9 @@ function renderValues(convertedParameters) {
 }
 
 //перевірка, чи не закінчився таймер (намагався через перевірку TimeLeft, проте там не виходило отримати точне число 0 при різниці)
-function timeLeftCheck(args) {
-  for (const arg in args) {
-    if (args[arg]) {
+function timeLeftCheck(time) {
+  for (const arg in time) {
+    if (time[arg]) {
       return true;
     }
   }
